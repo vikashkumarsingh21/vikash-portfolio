@@ -254,3 +254,28 @@
   --skill-glow: #8b5cf6;
   --skill-text-grad: linear-gradient(90deg, #c084fc, #818cf8);
 }
+
+
+.skills-stats {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid var(--c);
+}
+
+.stat-card h3 {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.stat-card p {
+  opacity: 0.8;
+}

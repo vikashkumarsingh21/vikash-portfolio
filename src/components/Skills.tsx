@@ -29,74 +29,95 @@ const ROWS: SkillRow[][] = [
     {
       title: "Programming Languages",
       items: [
-        { name: "Python", level: 95 },
-        { name: "C", level: 80 },
-        { name: "C++", level: 85 },
-        { name: "Java", level: 70 },
-      ],
-    },
-    {
-      title: "Web Technologies",
-      items: [
-        { name: "HTML", level: 95 },
-        { name: "CSS", level: 90 },
-        { name: "JavaScript", level: 85 },
-        { name: "React", level: 60 },
-      ],
-    },
-    {
-      title: "Databases & Tools",
-      items: [
-        { name: "MySQL", level: 90 },
-        { name: "MongoDB", level: 80 },
-        { name: "Git", level: 85 },
-      ],
-    },
-    {
-      title: "Frameworks & Libraries",
-      items: [
-        { name: "TensorFlow", level: 70 },
-        { name: "PyTorch", level: 75 },
-        { name: "OpenCV", level: 80 },
-        { name: "Numpy", level: 85 },
-        { name: "Pandas", level: 80 },
-      ],
-    },
-  ],
-  [
-    {
-      title: "Core Concepts",
-      items: [
-        { name: "Data Structures & Algorithms", level: 70 },
-        // { name: "Machine Learning", level: 90 },
-        // { name: "Deep Learning", level: 88 },
-        { name: "YOLO Object Detection", level: 80 },
-        // { name: "Explainable AI (XAI)", level: 75 },
+        { name: "Python", level: 85 },
+        { name: "C", level: 75 },
+        { name: "C++", level: 80 },
+        { name: "JavaScript", level: 75 },
       ],
     },
 
     {
-      title: "Internet of Things (IOT)",
+      title: "AI & Machine Learning",
       items: [
-        { name: "Node-MCU", level: 90 },
-        { name: "ESP-32", level: 80 },
-        { name: "Audrino", level: 90 },
-        { name: "Raspberry pi", level: 70 },
-        { name: "Jetson nano", level: 65 },
+        { name: "Machine Learning", level: 80 },
+        { name: "Data Analysis", level: 85 },
+        { name: "OpenCV", level: 75 },
+        { name: "YOLO", level: 75 },
+        { name: "Scikit-Learn", level: 80 },
       ],
     },
+
     {
-      title: "Soft Skills",
+      title: "Web Development",
       items: [
+        { name: "HTML", level: 85 },
+        { name: "CSS", level: 80 },
+        { name: "JavaScript", level: 75 },
+        { name: "React", level: 70 },
+        { name: "REST APIs", level: 80 },
+      ],
+    },
+  ],
+
+  [
+    {
+      title: "IoT & Embedded Systems",
+      items: [
+        { name: "Arduino", level: 85 },
+        { name: "NodeMCU", level: 85 },
+        { name: "ESP32", level: 80 },
+        { name: "Firebase", level: 80 },
+        { name: "Sensor Integration", level: 85 },
+      ],
+    },
+
+    {
+      title: "Database & Tools",
+      items: [
+        { name: "MongoDB", level: 70 },
+        { name: "MySQL", level: 75 },
+        { name: "Git", level: 80 },
+        { name: "GitHub", level: 85 },
+        { name: "VS Code", level: 90 },
+      ],
+    },
+
+    {
+      title: "Professional Skills",
+      items: [
+        { name: "Problem Solving", level: 90 },
+        { name: "Leadership", level: 85 },
         { name: "Teamwork", level: 90 },
-        { name: "Problem Solving", level: 95 },
-        { name: "Creativity", level: 92 },
-        { name: "Adaptability", level: 75 },
-        { name: "Communication", level: 70 },
+        { name: "Communication", level: 75 },
+        { name: "Adaptability", level: 80 },
       ],
     },
   ],
 ];
+
+<div className="skills-stats">
+
+  <div className="stat-card">
+    <h3>7+</h3>
+    <p>Projects</p>
+  </div>
+
+  <div className="stat-card">
+    <h3>2</h3>
+    <p>Internships</p>
+  </div>
+
+  <div className="stat-card">
+    <h3>1</h3>
+    <p>Patent</p>
+  </div>
+
+  <div className="stat-card">
+    <h3>1</h3>
+    <p>Microsoft Certification</p>
+  </div>
+
+</div>
 
 /* 🚀 ADDED ANIMATION VARIANTS */
 const container = {

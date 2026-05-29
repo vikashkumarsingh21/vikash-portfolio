@@ -286,3 +286,49 @@ DARK THEME (example)
   --a13: linear-gradient(90deg,#06b6d4,#0891b2);
 }
 */
+
+
+.project-category{
+  display:inline-block;
+  margin-bottom:8px;
+  padding:4px 10px;
+  border-radius:20px;
+  background:rgba(0,255,255,0.08);
+  color:#00eaff;
+  font-size:12px;
+  font-weight:600;
+}
+
+.project-meta{
+  margin:12px 0;
+}
+
+.project-meta p{
+  margin:4px 0;
+  font-size:13px;
+  color:#ccc;
+}
+
+.project-achievement{
+  margin:12px 0;
+  padding:8px 12px;
+  border-left:3px solid gold;
+  background:rgba(255,215,0,0.08);
+  color:#ffd700;
+  border-radius:6px;
+}
+
+.project-highlights{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  margin:12px 0;
+}
+
+.highlight-badge{
+  background:rgba(0,255,255,0.08);
+  color:#00eaff;
+  padding:4px 8px;
+  border-radius:6px;
+  font-size:12px;
+}
