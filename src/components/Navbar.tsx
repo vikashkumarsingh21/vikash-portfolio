@@ -12,7 +12,17 @@ export function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navItems = ['Home','About','Projects', 'Gallery', 'Experience','Skills', 'Resume', 'Blog', 'Contact'];
+  const navItems = [
+  'Home',
+  'About',
+  'Projects',
+  'Experience',
+  'Skills',
+  'Certificates',
+  'Resume',
+  'Blog',
+  'Contact'
+];
 
   const scrollToSection = (item: string) => {
     const id = item.toLowerCase();

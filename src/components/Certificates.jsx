@@ -86,7 +86,7 @@ const CERTS = {
       "Technology Consulting",
       "Business Analysis"
     ],
-    img: "/certs/deloitte.jpg"
+    img: "/certs/deloitte-certificate.jpg"
   },
 
   {
@@ -141,6 +141,23 @@ const CERTS = {
     img: "/certs/azure-ai.jpg"
   },
 
+   {
+    title: "Linux Essentials",
+    org: "Cisco Networking Academy",
+    date: "Mar 2026",
+    img: "/certs/linux-essentials.jpg",
+
+    description:
+      "Completed Linux Essentials certification covering Linux operating systems, command-line operations, security concepts and file permissions.",
+
+    skills: [
+      "Linux",
+      "CLI",
+      "System Administration",
+      "Security"
+    ]
+  },
+
   {
     title: "Prompt Engineering for Everyone",
     org: "IBM Skills Network",
@@ -156,7 +173,7 @@ const CERTS = {
       "AI Productivity"
     ],
 
-    img: "/certs/ibm-prompt.jpg"
+    img: "/certs/ibm-prompt-engineering.jpg"
   },
 
   {
@@ -342,7 +359,7 @@ const CERTS = {
       "Project Development"
     ],
 
-    img: "/certs/sih.jpg"
+    img: "/certs/sih-certificate.jpg"
   },
 
   {
@@ -458,7 +475,7 @@ const CERTS = {
 
     org: "Science Olympiad Foundation",
 
-    date: "2025",
+    date: "2014",
 
     description:
       "Participated in a national-level academic competition focused on analytical thinking and problem-solving skills.",
@@ -514,7 +531,7 @@ const CERTS = {
 
     achievement: "🥈 2nd Runner-Up",
 
-    img: "/certs/intellify-runnerup.jpg"
+    img: "/certs/intellify.jpg"
   },
 
   {
@@ -537,24 +554,7 @@ const CERTS = {
     img: "/certs/htm-volunteer.jpg"
   },
 
-  {
-    title: "INTELLIFY 2.0 Volunteer",
-
-    org: "Marwadi University",
-
-    date: "2024",
-
-    description:
-      "Supported the organization and successful execution of INTELLIFY 2.0 as a volunteer team member.",
-
-    skills: [
-      "Coordination",
-      "Leadership",
-      "Team Collaboration"
-    ],
-
-    img: "/certs/intellify-volunteer.jpg"
-  },
+  
 
   {
     title: "Robo Comp 4.0 Volunteer",
@@ -762,15 +762,65 @@ export default function Certificates() {
             exit={{ opacity: 0 }}
             onClick={() => setSelectedCert(null)}
           >
-            <motion.img
-              src={selectedCert.img}
-              alt={selectedCert.title}
-              className="modal-image"
-              initial={{ scale: 0.8 }}
-              animate={{ scale: 1 }}
-              exit={{ scale: 0.8 }}
-              onClick={(e) => e.stopPropagation()}
-            />
+            <div className="modal-content">
+
+  <button
+    className="close-modal"
+    onClick={() => setSelectedCert(null)}
+  >
+    ✕
+  </button>
+
+  <img
+    src={selectedCert.img}
+    alt={selectedCert.title}
+    className="modal-image"
+  />
+
+  <div className="modal-details">
+
+    <h2>{selectedCert.title}</h2>
+
+    <div className="modal-info">
+
+  <h2>{selectedCert.title}</h2>
+
+  <p>
+    🏢 {selectedCert.org}
+  </p>
+
+  <p>
+    📅 {selectedCert.date}
+  </p>
+
+  <div className="modal-skills">
+
+    {selectedCert.skills?.map((skill, index) => (
+      <span key={index}>
+        {skill}
+      </span>
+    ))}
+
+  </div>
+
+  <p className="modal-description">
+    {selectedCert.description}
+  </p>
+
+</div>
+
+    <p>
+      <strong>Date:</strong>
+      {selectedCert.date}
+    </p>
+
+    <p>
+      {selectedCert.description}
+    </p>
+
+  </div>
+
+</div>
           </motion.div>
         )}
       </AnimatePresence>
