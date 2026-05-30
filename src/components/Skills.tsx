@@ -222,39 +222,86 @@ export const Skills: React.FC = () => {
         ))}
       </div>
 
-      <div className="expertise-section">
+      {/* =====================================
+    AREAS OF EXPERTISE
+===================================== */}
 
-  <h2>Areas of Expertise</h2>
+<section className="expertise-section">
+
+  <div className="expertise-header">
+    <h2>
+      Areas of <span>Expertise</span>
+    </h2>
+
+    <p>
+      Combining Artificial Intelligence, IoT Systems, and Full-Stack
+      Development to build intelligent real-world solutions.
+    </p>
+  </div>
 
   <div className="expertise-grid">
 
     <div className="expertise-card">
-      <h3>🤖 Artificial Intelligence</h3>
+      <div className="expertise-icon">🤖</div>
+
+      <h3>Artificial Intelligence & Machine Learning</h3>
+
       <p>
-        Machine Learning, Computer Vision,
-        YOLO, OpenCV, Deep Learning.
+        Designing intelligent systems using Machine Learning,
+        Computer Vision, Deep Learning, and Data Analytics
+        to solve real-world problems.
       </p>
+
+      <ul>
+        <li>Machine Learning</li>
+        <li>Computer Vision</li>
+        <li>YOLO Object Detection</li>
+        <li>OpenCV</li>
+        <li>Data Analysis</li>
+      </ul>
     </div>
 
     <div className="expertise-card">
-      <h3>🌐 Web Development</h3>
+      <div className="expertise-icon">🌐</div>
+
+      <h3>Web Development</h3>
+
       <p>
-        React, JavaScript, APIs,
-        Responsive UI Design.
+        Building responsive and interactive web applications
+        with modern frontend technologies and API integration.
       </p>
+
+      <ul>
+        <li>React.js</li>
+        <li>JavaScript</li>
+        <li>HTML & CSS</li>
+        <li>REST APIs</li>
+        <li>Responsive Design</li>
+      </ul>
     </div>
 
     <div className="expertise-card">
-      <h3>📡 IoT & Embedded Systems</h3>
+      <div className="expertise-icon">📡</div>
+
+      <h3>IoT & Embedded Systems</h3>
+
       <p>
-        ESP32, Arduino, Sensors,
-        Firebase Integration.
+        Developing smart automation systems using sensors,
+        microcontrollers, cloud integration, and real-time monitoring.
       </p>
+
+      <ul>
+        <li>Arduino</li>
+        <li>ESP32</li>
+        <li>NodeMCU</li>
+        <li>Firebase</li>
+        <li>Sensor Integration</li>
+      </ul>
     </div>
 
   </div>
 
-</div>
+</section>
     </section>
   );
 };

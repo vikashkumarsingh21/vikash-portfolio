@@ -6,6 +6,7 @@ import { Home } from "./components/Home";
 import { About } from "./components/About";
 import { Team } from "./components/Team";
 import Projects from "./components/Projects";
+import ExperienceEducation from "./components/ExperienceEducation";
 // import { Gallery } from "./components/Gallery";
 // import { GalleryPage } from "./components/GalleryPage"; // <--- NEW PAGE IMPORT
 import { Skills } from "./components/Skills";
@@ -66,6 +67,7 @@ export default function App() {
 
 
                 <Skills theme={theme} />
+                <ExperienceEducation />
                 <Resume theme={theme} />
                 <Certificates theme={theme} />
                 <Blog theme={theme} />
