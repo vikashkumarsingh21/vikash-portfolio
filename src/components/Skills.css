@@ -256,26 +256,40 @@
 }
 
 
-.skills-stats {
-  margin-top: 50px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
-  gap: 20px;
+.expertise-section {
+  margin-top: 80px;
 }
 
-.stat-card {
-  padding: 20px;
-  border-radius: 16px;
+.expertise-section h2 {
   text-align: center;
-  border: 1px solid var(--c);
+  margin-bottom: 40px;
+  font-size: 2.5rem;
 }
 
-.stat-card h3 {
-  font-size: 2rem;
-  color: var(--accent);
-  margin-bottom: 8px;
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 25px;
 }
 
-.stat-card p {
-  opacity: 0.8;
+.expertise-card {
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: 0.3s;
+}
+
+.expertise-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(0,255,255,.2);
+}
+
+.expertise-card h3 {
+  margin-bottom: 15px;
+  color: #00e5ff;
+}
+
+.expertise-card p {
+  line-height: 1.8;
 }

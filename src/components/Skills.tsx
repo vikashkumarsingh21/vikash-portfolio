@@ -9,19 +9,21 @@ interface SkillRow {
 
 const SKILLS = [
   { name: "Python", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
-  { name: "C", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" },
-  { name: "C++", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
-  { name: "Java", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+  { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
   { name: "HTML", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
   { name: "CSS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
-  { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
   { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-  { name: "MySQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+  { name: "Firebase", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg" },
   { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
   { name: "Git", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
-  { name: "TensorFlow", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
-  { name: "PyTorch", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
+  { name: "GitHub", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
   { name: "OpenCV", logo: "https://upload.wikimedia.org/wikipedia/commons/3/32/OpenCV_Logo_with_text_svg_version.svg" },
+  { name: "Arduino", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" },
+  { name: "C", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" },
+  { name: "C++", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
+  { name: "MySQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+  // { name: "ESP32", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
+  // { name: "NodeMCU", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
 ];
 
 const ROWS: SkillRow[][] = [
@@ -95,29 +97,6 @@ const ROWS: SkillRow[][] = [
   ],
 ];
 
-<div className="skills-stats">
-
-  <div className="stat-card">
-    <h3>7+</h3>
-    <p>Projects</p>
-  </div>
-
-  <div className="stat-card">
-    <h3>2</h3>
-    <p>Internships</p>
-  </div>
-
-  <div className="stat-card">
-    <h3>1</h3>
-    <p>Patent</p>
-  </div>
-
-  <div className="stat-card">
-    <h3>1</h3>
-    <p>Microsoft Certification</p>
-  </div>
-
-</div>
 
 /* 🚀 ADDED ANIMATION VARIANTS */
 const container = {
@@ -242,6 +221,40 @@ export const Skills: React.FC = () => {
           </div>
         ))}
       </div>
+
+      <div className="expertise-section">
+
+  <h2>Areas of Expertise</h2>
+
+  <div className="expertise-grid">
+
+    <div className="expertise-card">
+      <h3>🤖 Artificial Intelligence</h3>
+      <p>
+        Machine Learning, Computer Vision,
+        YOLO, OpenCV, Deep Learning.
+      </p>
+    </div>
+
+    <div className="expertise-card">
+      <h3>🌐 Web Development</h3>
+      <p>
+        React, JavaScript, APIs,
+        Responsive UI Design.
+      </p>
+    </div>
+
+    <div className="expertise-card">
+      <h3>📡 IoT & Embedded Systems</h3>
+      <p>
+        ESP32, Arduino, Sensors,
+        Firebase Integration.
+      </p>
+    </div>
+
+  </div>
+
+</div>
     </section>
   );
 };

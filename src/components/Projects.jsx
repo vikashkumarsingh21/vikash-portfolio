@@ -15,7 +15,7 @@ const PROJECTS = [
 
   desc: "Smart agriculture platform combining IoT monitoring, AI-powered crop protection, weather forecasting, and market insights to help farmers improve productivity and decision making.",
 
-  image: "public/krishidrishti.jpeg",
+  image: "/krishidrishti.jpeg",
 
   tech: [
     "Python",
@@ -60,7 +60,7 @@ const PROJECTS = [
 
   desc: "An autonomous river cleaning robot designed to remove floating waste, monitor water quality, and support environmental sustainability using IoT sensors, AI-powered navigation, and a real-time monitoring dashboard.",
 
-  image: "public/jalmitra.jpg",
+  image: "/jalmitra.jpg",
 
   tech: [
     "Arduino",
@@ -105,7 +105,7 @@ const PROJECTS = [
 
   desc: "A web-based social network analysis platform that visualizes user relationships using graph theory concepts, enabling network exploration, connectivity analysis, and relationship insights through interactive visualizations.",
 
-  image: "public/Social Network Analyzer.jpg",
+  image: "/Social Network Analyzer.jpg",
 
   tech: [
     "JavaScript",
@@ -148,7 +148,7 @@ const PROJECTS = [
 
   desc: "A machine learning application that predicts student placement outcomes based on academic performance and aptitude-related features using Logistic Regression. The project demonstrates the complete ML workflow from data preprocessing to model deployment.",
 
-  image: "public/placement.jpg",
+  image: "/placement.jpg",
 
   tech: [
     "Python",
@@ -193,7 +193,7 @@ const PROJECTS = [
 
   desc: "A responsive weather forecasting web application that provides real-time weather conditions, temperature, humidity, wind speed, and location-based forecasts using external weather APIs.",
 
-  image: "public/wether.png",
+  image: "/wether.png",
 
   tech: [
     "HTML",
@@ -235,7 +235,7 @@ const PROJECTS = [
 
   desc: "A dynamic news aggregation platform that fetches and displays real-time news articles from external news APIs, allowing users to explore the latest headlines across multiple categories through an intuitive interface.",
 
-  image: "public/news.webp",
+  image: "/news.webp",
 
   tech: [
     "HTML",
@@ -277,7 +277,7 @@ const PROJECTS = [
 
   desc: "A responsive Amazon-inspired e-commerce interface built to practice modern frontend development concepts, responsive layouts, DOM manipulation, and interactive user experiences using HTML, CSS, and JavaScript.",
 
-  image: "public/amazon.webp",
+  image: "/amazon.webp",
 
   tech: [
     "HTML5",
