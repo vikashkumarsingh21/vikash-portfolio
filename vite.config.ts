@@ -13,10 +13,9 @@ export default defineConfig({
   },
 
   build: {
-    outDir: "build",
-    target: "esnext",
-    cssCodeSplit: false, // ← forces ALL CSS into index.css
-  },
+  target: "esnext",
+  cssCodeSplit: false,
+},
 
   server: {
     port: 3000,
