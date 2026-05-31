@@ -690,7 +690,7 @@ export default function Certificates() {
           ) : (
             CERTS[activeTab].map((cert, index) => (
               <motion.div
-                key={index}
+                key={`${activeTab}-${cert.title}`}
                 className="cert-card"
                 whileHover={{ y: -10 }}
                 onClick={() => setSelectedCert(cert)}
@@ -698,7 +698,8 @@ export default function Certificates() {
                 <img
   src={cert.img}
   alt={cert.title}
-  className="cert-img"
+  className="cert-image"
+  loading="lazy"
 />
 
                 <div className="cert-content">
