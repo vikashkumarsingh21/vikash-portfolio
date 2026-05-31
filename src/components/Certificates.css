@@ -139,50 +139,9 @@
 }
 
 
-<div className="cert-content">
 
-  <div className="cert-top">
 
-    <h3 className="cert-name">
-      {cert.title}
-    </h3>
 
-    <span className="cert-date">
-      {cert.date}
-    </span>
-
-  </div>
-
-  <p className="cert-org">
-    {cert.org}
-  </p>
-
-  {cert.description && (
-    <p className="cert-description">
-      {cert.description}
-    </p>
-  )}
-
-  {cert.skills && (
-    <div className="cert-skills">
-
-      {cert.skills.map((skill, i) => (
-        <span
-          key={i}
-          className="skill-badge"
-        >
-          {skill}
-        </span>
-      ))}
-
-    </div>
-  )}
-
-  <button className="view-btn">
-    View Certificate
-  </button>
-
-</div>
 
 /* NEW PROFESSIONAL CARD DESIGN */
 
